@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <link rel="stylesheet" href="css/main.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard</title>
+</head>
+
+<body class="h-screen m-0 p-0 box-border bg-no-repeat bg-center bg-fixed bg-cover drop-shadow-lg">
+  <main class=" flex flex-col justify-between d m-5 min-h-screen ">
+
+
+    <div class="top flex justify-between">
+
+      <!-- WEATHER -->
+      <div id="weather" class="w-40 p-3 rounded-lg text-sky-500  bg-[#dfd6d6] opacity-70">
+        <h2>Weather</h2>
+      </div>
+
+      <!-- OVERALL BACKGROUND IMAGE -->
+      <p id="author" class="m-0 text-sky-500"></p>
+
+      <!-- CRYPTO CURRENCY UPDATE -->
+      <div class="w-80 p-3 rounded-lg text-sky-500 bg-[#dfd6d6] opacity-70">
+        <div id="cryptoTitle" class="w-40 p-3   text-xl  flex justify-evenly items-center">Crypto</div>
+        <div id="cryptoContent" class=" leading-7"></div>
+      </div>
+    </div>
+
+    <!-- TIME -->
+    <div
+      class="timeDate block font-medium text-center text-sky-500 text-5xl bg-[#dfd6d6] opacity-70 w-1/3 rounded-lg self-center py-6">
+      <h1 id="time">TIME</h1>
+      <h1 id="dateDay">DATE</h1>
+    </div>
+
+  </main>
+
+  <script src="index.js"></script>
+</body>
+
+</html>
