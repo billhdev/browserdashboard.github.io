@@ -5,9 +5,9 @@ let backgroundEndpoint =
 fetch(backgroundEndpoint)
 	.then((res) => res.json())
 	.then((data) => {
-		// console.log(data.urls.regular)
+		console.log(data.urls.regular)
 		document.body.style.backgroundImage = `url(${data.urls.regular})`;
-		document.getElementById('author').textContent = `By: ${data.user.name}`;
+		document.getElementById('author').innerHTML = `By: ${data.user.name}`;
 	})
 	.catch((res) => console.log('error', res));
 
